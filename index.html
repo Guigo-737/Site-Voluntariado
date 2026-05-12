@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Abraço Solidário | Escola Paulo de Tarso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-box" aria-label="Logo da Escola Paulo de Tarso">
+        <span>P</span><span>T</span>
+      </div>
+      <div>
+        <h1>Escola Paulo de Tarso</h1>
+        <p>Projeto Abraço Solidário</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#causa">Causa</a>
+      <a href="#projeto">Projeto</a>
+      <a href="#voluntario">Voluntários</a>
+      <a href="#desenvolvedor">Desenvolvedor</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">#VemSerSolidário</p>
+        <h2>Ajude quem vive nas ruas com o Projeto Abraço Solidário</h2>
+        <p>Conecte-se com moradores em situação de rua e faça parte de uma ação transformadora em 2026.</p>
+        <a href="#voluntario" class="btn">Quero ser voluntário</a>
+      </div>
+      <div class="hero-image">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'><rect width='900' height='600' fill='%23ffffff'/><rect x='50' y='50' width='800' height='500' rx='40' fill='%23ff7f2a' opacity='0.14'/><circle cx='260' cy='240' r='72' fill='%230f4c81'/><circle cx='540' cy='260' r='72' fill='%23ff7f2a'/><path d='M240 340q120 120 260 0' fill='none' stroke='%230f4c81' stroke-width='30' stroke-linecap='round'/><text x='450' y='110' text-anchor='middle' fill='%230f4c81' font-size='48' font-weight='700' font-family='Arial'>Imagem IA</text><text x='450' y='470' text-anchor='middle' fill='%230f4c81' font-size='24' font-family='Arial'>Voluntários em apoio social</text></svg>" alt="Ilustração gerada por IA mostrando apoio social" class="hero-ia-image" />
+      </div>
+    </section>
+
+    <section class="year-section">
+      <h3>Ano do Voluntariado</h3>
+      <p>Voluntariado é a ação voluntária que fortalece a comunidade e promove solidariedade. Em 2026, celebramos o Ano Internacional dos Voluntários para o Desenvolvimento Sustentável, reforçando que pequenas ações podem gerar grandes mudanças.</p>
+    </section>
+
+    <section id="causa" class="section-content">
+      <div class="section-header">
+        <span class="section-number">1</span>
+        <h3>Tema da causa escolhida</h3>
+      </div>
+      <p>O projeto aborda a questão da população em situação de rua na cidade, com foco em dignidade, alimentação e acolhimento.</p>
+      <ul>
+        <li><strong>Problema:</strong> falta de moradia, acesso a água potável e alimentação segura.</li>
+        <li><strong>Quem será ajudado:</strong> moradores de rua, público em vulnerabilidade social.</li>
+        <li><strong>Dados:</strong> no Brasil, mais de 700 mil pessoas vivem em situação de rua, muitas sem acesso básico à higiene e refeição.</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80" alt="Voluntários ajudando pessoas em situação de rua" />
+      <p class="image-caption">Imagem representativa da causa.</p>
+    </section>
+
+    <section id="projeto" class="section-content project-section">
+      <div class="section-header">
+        <span class="section-number">2</span>
+        <h3>Projeto concreto</h3>
+      </div>
+      <p><strong>Nome do projeto:</strong> Abraço Solidário</p>
+      <p><strong>O que vai acontecer:</strong> entrega de kits de higiene, lanches saudáveis e rodas de conversa com moradores de rua para mapear necessidades imediatas.</p>
+      <p><strong>Local:</strong> Praça da Matriz, Centro da cidade.</p>
+      <p><strong>Data:</strong> 20 de junho de 2026.</p>
+      <p><strong>Horário:</strong> 09h às 13h.</p>
+      <p><strong>Como os voluntários irão participar:</strong> acolhimento direto, montagem de kits, distribuição de alimentos, escuta ativa e orientação sobre serviços sociais.</p>
+    </section>
+
+    <section id="voluntario" class="form-section">
+      <div class="section-header">
+        <span class="section-number">3</span>
+        <h3>Formulário para voluntários</h3>
+      </div>
+      <p>Cadastre-se para participar do Projeto Abraço Solidário e receba informações sobre o ponto de encontro.</p>
+      <form id="volunteerForm">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">Idade</label>
+        <input type="number" id="age" name="age" min="12" max="100" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="role">Qual apoio você prefere?</label>
+        <select id="role" name="role" required>
+          <option value="">Escolha uma opção</option>
+          <option value="kit">Montar kits de higiene</option>
+          <option value="lanche">Distribuir lanches</option>
+          <option value="escuta">Escuta ativa e orientação</option>
+        </select>
+
+        <button type="submit" class="btn">Enviar inscrição</button>
+      </form>
+      <div id="response" class="response-message" hidden></div>
+      <div class="volunteer-count">
+        <p>Total de voluntários inscritos: <span id="count">0</span></p>
+      </div>
+    </section>
+
+    <section id="desenvolvedor" class="section-content developer-section">
+      <div class="section-header">
+        <span class="section-number">4</span>
+        <h3>Desenvolvedor do site</h3>
+      </div>
+      <div class="developer-card">
+        <div class="developer-photo">
+          <img src="https://via.placeholder.com/200x200.png?text=Foto+do+Grupo" alt="Foto do desenvolvedor ou do grupo" />
+        </div>
+        <div class="developer-info">
+          <p><strong>Aluno/Grupo:</strong> Grupo Coração Solidário</p>
+          <p><strong>Turma:</strong> Web 2026</p>
+          <p><strong>Tecnologias utilizadas:</strong> HTML, CSS e JavaScript puro.</p>
+          <p><strong>Descrição:</strong> Este site foi criado para apresentar o Projeto Abraço Solidário, com foco em mobilização de voluntários e uso de localStorage para registro de inscrições.</p>
+          <p><strong>Personalizações feitas:</strong> paleta inspirada na escola com laranja, branco e azul; logotipo da Escola Paulo de Tarso; campanha "Um abraço transforma"; imagem representativa da escola e ilustração IA.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Escola Paulo de Tarso • Projeto Abraço Solidário • 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
